@@ -1,6 +1,14 @@
 /* jshint jquery: true */
 /* global async: false */
 
+function refreshStockPrices(stocks) {
+  var $trs = $('tr');
+
+  _.forEach(stocks, function (stock, i) {
+    $($($trs[i]).find('td')[3]).text(stock.LastPrice);
+  });
+}
+
 function addStockToTable(stock) {
   var $row = $('<tr></tr>');
 

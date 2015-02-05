@@ -1,4 +1,6 @@
-function addStockToTable(stock){
+/* jshint jquery: true */
+
+function addStockToTable(stock) {
   var $row = $('<tr></tr>');
 
   $row.append('<td>' + stock.Name + '</td>');
@@ -13,7 +15,7 @@ function addStockToTable(stock){
 function getStock(symbol, cb) {
   var url = 'http://dev.markitondemand.com/Api/v2/Quote/jsonp?symbol=' + symbol;
 
-  $.get(url, function(res){
+  $.get(url, function (res) {
     return cb(res);
   }, 'jsonp');
 }

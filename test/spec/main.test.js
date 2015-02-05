@@ -1,4 +1,4 @@
-/* jshint mocha: true, expr: true, strict: false */
+/* jshint mocha: true, expr: true, strict: false, undef: false */
 
 describe('test suite', function () {
   it('should assert true', function () {

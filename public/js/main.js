@@ -10,7 +10,7 @@ function refreshStockPrices(stocks) {
 }
 
 function addStockToTable(stock) {
-  if (stock.Name) {
+  if (stock.Message) {
     return;
   }
 
